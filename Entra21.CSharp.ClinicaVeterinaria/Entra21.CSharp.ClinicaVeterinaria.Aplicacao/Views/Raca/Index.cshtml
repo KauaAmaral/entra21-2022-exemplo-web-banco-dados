@@ -4,26 +4,24 @@
 </div>
 
 <table>
-    <thead> 
+    <thead>
         <!-- Cabecalho da tabela-->
-        <tr> 
+        <tr>
             <!-- Linha da tabela-->
             <th>Código</th> <!-- Coluna especifica do cabecalho-->
             <th>Nome</th>
             <th>Espécie</th>
         </tr>
     </thead>
-    <tbody> 
+    <tbody>
         <!-- Lugar dos registros da tabela-->
-        <tr>
-            <td>1</td> <!-- Coluna especifica para body-->
-            <td>Pinscher</td>
-            <td>Cachorro</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Frajola</td>
-            <td>Gato</td>
-        </tr>
+        @foreach (var raca in ViewBag.Racas)
+        {
+            <tr>
+                <td>@raca.Id</td> <!-- Coluna especifica para body-->
+                <td>@raca.Nome</td>
+                <td>@raca.Especie</td>
+            </tr>
+        }
     </tbody>
 </table>
