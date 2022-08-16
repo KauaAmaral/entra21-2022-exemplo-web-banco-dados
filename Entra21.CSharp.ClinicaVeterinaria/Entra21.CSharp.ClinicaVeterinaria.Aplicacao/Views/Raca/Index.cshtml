@@ -1,9 +1,17 @@
-﻿<h1>Lista de Raças</h1>
-<div>
-    <a href="/raca/cadastrar">Cadastrar</a>
+﻿@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de Raças</h1>
+
+<div class="row mb-2">
+    <div class="text-end">
+        <a href="/raca/cadastrar"
+           class="btn btn-primary">Cadastrar</a>
+    </div>
 </div>
 
-<table>
+<table class="table table-striped table-bordered">
     <thead>
         <!-- Cabecalho da tabela-->
         <tr>
