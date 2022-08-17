@@ -20,6 +20,7 @@ namespace Entra21.CSharp.ClinicaVeterinaria.Repositorio
                  .FirstOrDefault();
 
             _contexto.Racas.Remove(raca);
+            _contexto.SaveChanges();
         }
 
         public void Atualizar(Raca racaParaAlterar)
@@ -32,6 +33,7 @@ namespace Entra21.CSharp.ClinicaVeterinaria.Repositorio
             raca.Especie = racaParaAlterar.Especie;
 
             _contexto.Update(raca);
+            _contexto.SaveChanges();
         }
 
         public void Cadastrar(Raca raca)
