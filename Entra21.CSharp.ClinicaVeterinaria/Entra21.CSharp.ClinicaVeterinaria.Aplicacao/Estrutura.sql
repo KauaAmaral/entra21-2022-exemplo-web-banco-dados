@@ -4,3 +4,5 @@ CREATE TABLE racas(
 	nome VARCHAR(100),
 	especie VARCHAR(40)
 );
+
+SELECT * FROM racas;
