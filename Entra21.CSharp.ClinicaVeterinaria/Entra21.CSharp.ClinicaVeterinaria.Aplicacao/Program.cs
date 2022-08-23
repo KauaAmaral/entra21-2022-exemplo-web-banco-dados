@@ -12,6 +12,13 @@ options.UseSqlServer(
 
 var app = builder.Build();
 
+using(var scopo = app.Services.CreateScope())
+{
+    var contexto = scopo.ServiceProvider
+        .GetService<ClinicaVeterinariaContexto>();
+    contexto.Database.EnsureCreated();
+}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

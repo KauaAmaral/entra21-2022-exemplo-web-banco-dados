@@ -14,7 +14,6 @@
         <!-- Cabecalho da tabela-->
         <tr>
             <!-- Linha da tabela-->
-            <th>Código</th> <!-- Coluna especifica do cabecalho-->
             <th>Nome</th>
             <th>Espécie</th>
             <th>Ação</th>
@@ -25,7 +24,6 @@
         @foreach (var raca in Model)
         {
             <tr>
-                <td>@raca.Id</td> <!-- Coluna especifica para body-->
                 <td>@raca.Nome</td>
                 <td>@raca.Especie</td>
                 <td>
