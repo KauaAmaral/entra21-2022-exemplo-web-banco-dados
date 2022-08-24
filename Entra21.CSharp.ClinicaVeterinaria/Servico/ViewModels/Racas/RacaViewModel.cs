@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Entra21.CSharp.ClinicaVeterinaria.Servico.ViewModels
+namespace Entra21.CSharp.ClinicaVeterinaria.Servico.ViewModels.Racas
 {
     public class RacaViewModel
     {
